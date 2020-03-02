@@ -1,13 +1,14 @@
-int menosFreq (int v[], int N){
-       int r=N,i,a=v[0],c,j;
-       for(i=0;i<N;i++){
-           c=0;
-           for(j=0;j<N;j++)
-                if(v[j]==v[i]) c++; 
-                if(c<r){
-                   r=c;
-                   a=v[i];
-               }
-       }
-       return a;
-   }
+int menosFreq (int v[], int N){ //32
+	int r= v[0], i, c=0, f = N;
+	for (i=0;i<N;i++){
+		if(v[i]==v[i+1]) c++;
+		else{
+		    if(c<f){
+		       f=c;
+		       r=v[i];
+		    }
+		    c=0;
+		}
+	}
+	return r;
+}
