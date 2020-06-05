@@ -30,6 +30,5 @@ void merge (LInt *r, LInt l1, LInt l2) {
             }
         }
     }
-    newl = *r;
     *r = (*r) -> prox;
 }
