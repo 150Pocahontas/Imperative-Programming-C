@@ -1,0 +1,10 @@
+typedef struct lligada {
+int valor;
+struct lligada *prox;
+} *LInt;
+
+int length (LInt l){
+    int i;
+    for(i=0;l!= NULL;i++) l = l->prox;
+    return i;
+}
