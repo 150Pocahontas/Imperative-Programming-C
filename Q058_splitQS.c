@@ -25,11 +25,7 @@ void splitQS (LInt l, int x, LInt *mx, LInt *Mx){
             newM = newM->prox;
             newM->prox = NULL;
         }
-        
     }
-    l = *mx;
-	*mx = (*mx)->prox;
-
-	l = *Mx;
-	*Mx = (*Mx)->prox;
+    *mx = (*mx)->prox;
+    *Mx = (*Mx)->prox;
 }
