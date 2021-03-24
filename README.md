@@ -1,1 +1,1 @@
-# Imperative Programtions
+# Imperative Programming / C
